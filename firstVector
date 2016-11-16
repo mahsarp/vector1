@@ -1,0 +1,39 @@
+#include<iostream>
+#include <vector>
+using namespace std;
+//template <typename T>
+
+
+//template <typename T>;
+
+std::vector<int> firstv;
+
+	int main()
+	{
+	
+		int x;
+		firstv.push_back(10);
+		firstv.push_back(20);
+		firstv.push_back(33);
+		firstv.push_back(44);
+		
+	
+		cout << firstv.size()<<endl;
+	// option 1	
+		for (int i = 0; i < firstv.size(); i++) {
+			cout << firstv.at(i) <<endl;
+
+		}
+//option 2
+		firstv.push_back(1);
+		firstv.push_back(7);
+
+		vector<int>::iterator itr1 = firstv.begin();
+		vector <int>::iterator itr2 = firstv.end();
+		for (vector<int>::iterator itr = itr1; itr != itr2; ++itr)
+			cout << *itr <<" ";
+
+		
+		cin >> x;
+		return 0;
+	}
