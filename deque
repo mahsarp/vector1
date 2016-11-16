@@ -1,0 +1,36 @@
+#include <iostream>
+#include<deque>
+using namespace std;
+
+
+//template <typename T>;
+deque <double> firstdeq;
+
+int main(){
+	int y;
+	firstdeq.push_front(6.1);
+	firstdeq.push_back(7.8);
+	firstdeq.push_front(1.5);
+	firstdeq.push_back(77);
+	firstdeq.push_back(9);
+
+	cout << firstdeq[1]<<endl;
+	cout << *firstdeq.begin();
+
+	deque<double>::iterator itr = firstdeq.begin();
+	while (itr!=firstdeq.end())
+	{
+		cout <<*itr<< endl;
+		itr++;
+	}
+	
+
+//for ( itr=firstdeq.begin; itr!=firstdeq.end; itr++)
+//	{
+//		cout << firstdeq.at
+//	}
+
+	cin >> y;
+		return 0;
+
+}
